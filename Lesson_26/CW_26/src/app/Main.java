@@ -21,9 +21,25 @@ public class Main {
                 new Person("Jack","Jones",new MyDate(10,2,2008)),
                 new MyDate(20,06,2024),1000);
 
+        BankAccount account2 = new BankAccount("DE12442223311",
+                new Person("Oleg","Olegov",new MyDate(12,11,1975)),
+                new MyDate(20,06,2024),200000);
 
 
-        account1.printBankAccount();
+        BankAccount[] accountsArr = {account1, account2,
+                new BankAccount("DE12334123345",
+                        new Person("Stiven","Rogers", new MyDate(19,4,1918)),
+                        new MyDate(14,12,2023),15000)};
+
+
+        for (int i = 0; i <accountsArr.length; i++) {
+            System.out.println(accountsArr[i]);
+
+        }
+
+
+
+
 
     }
 

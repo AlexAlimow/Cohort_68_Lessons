@@ -14,8 +14,14 @@ public class BankAccount {
         this.balance = balance;
     }
     public void printBankAccount(){
-        System.out.println(iban + " " + owner.personToString() +
-                " Счет открыт:" + open.dateToString() + " Баланс:" + balance );
+        System.out.println(iban + " " + owner.toString() +
+                " Счет открыт:" + open.toString() + " Баланс:" + balance );
 
     }
+    public String toString(){
+        return  iban + " " + owner +
+                " Счет открыт:" + open + " Баланс:" + balance ;
+
+    }
+
 }

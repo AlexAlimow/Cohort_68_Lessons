@@ -11,8 +11,8 @@ public class Person {
         this.lastName = lastName;
         this.birthday = birthday;
     }
-    public String personToString(){
+    public String toString(){
         return firstName.charAt(0) +"." + lastName
-                + " " + "(" + birthday.dateToString() + ")";
+                + " " + "(" + birthday.toString() + ")";
     }
 }
