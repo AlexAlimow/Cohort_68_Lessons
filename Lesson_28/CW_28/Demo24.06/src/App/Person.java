@@ -18,6 +18,6 @@ public class Person {
         return age;
     }
     public String toString(){
-        return name + " " + age;
+        return name + " (" + age + ")";
     }
 }

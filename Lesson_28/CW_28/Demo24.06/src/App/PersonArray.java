@@ -1,11 +1,11 @@
 package App;
 
-public class personArray
+public class PersonArray
 {   private Person[] array; // размер внутреннего массива
     private int capacity = 5; // сколько в нем реально элементов
     private int size = 0;
 
-    public personArray() {
+    public PersonArray() {
         this.array = new Person[capacity];
     }
     public void add(Person p){
@@ -21,11 +21,11 @@ public class personArray
         2. скопировать все элементы из исходного массива в новый
         3. перекинуть указатель array на новый массив
          */
-        Person[] newArray = new Person[array.length * 2];
-        for (int i = 0; i < array.length; i++) {
+        Person[] newArray = new Person[array.length * 2]; // 1
+        for (int i = 0; i < array.length; i++) {  // 2
             newArray[i] = array[i];
         }
-        array = newArray;
+        array = newArray;  //3
 
 
     }
