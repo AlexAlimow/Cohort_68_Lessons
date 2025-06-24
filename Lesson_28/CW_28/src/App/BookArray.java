@@ -7,10 +7,7 @@ public class BookArray {
 
     public BookArray(Book[] books) {
         this.books = books;
-
     }
-
-
 
     public String toString() {
         String result = "";
