@@ -38,14 +38,14 @@ public class BookArray {
 
     public void printAllBooks() {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("Все книги в массиве: " + "\n" + arr[i]);
+            System.out.println("Все книги в массиве:" + System.lineSeparator()  + arr[i]);
         }
     }
 
     public boolean hasBookInArray(String title) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i].getTitle().equalsIgnoreCase(title)) {
-                return true;
+                return arr[i].getTitle().equalsIgnoreCase(title);
             }
         }
         return false;
