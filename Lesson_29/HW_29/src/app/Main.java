@@ -27,17 +27,17 @@ public class Main {
         while (true) {
             System.out.print("Число: ");
             input = scanner.nextInt();
-            if(input== 0){
+            if (input == 0) {
                 break;
-
+            } else {
+                numList.add(input);
             }
-            numList.add(input);
+            int sum = 0;
+            for (int num : numList) {
+                sum += num;
+            }
+            System.out.println("Введённые числа: " + numList);
+            System.out.println("Сумма: " + sum);
         }
-        int sum = 0;
-        for (int num : numList){
-            sum += num;
-        }
-        System.out.println("Введённые числа: " + numList);
-        System.out.println("Сумма: " + sum);
     }
 }

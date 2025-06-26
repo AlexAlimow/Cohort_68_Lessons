@@ -100,7 +100,7 @@ public class Main2 {
                 printed.add(p.getName());
             }
         }
-        System.out.printf("Итого: %.2f%n", total);
+        System.out.println("Итого: " + total);
 
     }
 }
