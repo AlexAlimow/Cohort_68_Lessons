@@ -11,7 +11,7 @@ package model;
 
      }
      public String toString(){
-         return "Square (side=" + side + ")";
+         return "Square (side= " + side + ")";
 
      }
 }

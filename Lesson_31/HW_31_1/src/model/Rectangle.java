@@ -12,7 +12,7 @@ package model;
          return width * height;
      }
      public String toString(){
-         return "Rectangle (width=" + width + " ,height=" + height + ")";
+         return "Rectangle (width= " + width + " ,height=" + height + ")";
 
      }
 
