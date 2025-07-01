@@ -22,6 +22,11 @@ public class Main {
         students.add(new Student("Jim Walker", "4"));
 
         printAllStudents(students);
+        System.out.println("--------");
+        System.out.println(Student.howManyStudents());
+        System.out.println("--------");
+
+
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите название группы которую ищите:");
@@ -38,6 +43,7 @@ public class Main {
     public static void printAllStudents(List<Student> students) {
         for (Student student : students) {
             System.out.println(student);
+
         }
     }
 
