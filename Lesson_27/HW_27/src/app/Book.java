@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Objects;
+
 /*
 Задача 1
 Реализуйте класс Book (Книга) Книга должна иметь несколько атрибутов:
@@ -44,5 +46,7 @@ public class Book {
                 ", Год издания: " + yearOfPublished + ".";
 
     }
+
+
 }
 
