@@ -1,6 +1,7 @@
 package app;
 
 import app.comparator.ComparatorByAvailableInStock;
+import app.comparator.ComparatorByName;
 import app.comparator.ComparatorByPrice;
 import app.comparator.ComparatorByRating;
 import app.model.Product;
@@ -26,6 +27,7 @@ public class Main {
         System.out.println("2. По цене (по убыванию)");
         System.out.println("3. По рейтингу");
         System.out.println("4. По наличию");
+        System.out.println("5. По имени");  // добавил сортировку по имени
 
         int choice = scanner.nextInt();
 
@@ -42,10 +44,14 @@ public class Main {
             case 4:
                 Collections.sort(products, new ComparatorByAvailableInStock());
                 break;
+            case 5:
+                Collections.sort(products, new ComparatorByName());
+                break;
             default:
                 System.out.println("Неверный ввод, ошибка!");
                 return;
         }
+
         System.out.println("\nОтсортированный список товаров:");
         for (Product p : products) {
             System.out.println(p);
