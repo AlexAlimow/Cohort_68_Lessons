@@ -10,7 +10,10 @@ public class Main2 {
         list.add(new Person("John", 31));
         list.add(new Person("Nick", 37));
         list.add(new Person("Mike", 23));
-        list.add(new Person("Ann", 39));
+        list.add(new Person("Sveta", 39));
+        list.add(new Person("Ann", 44),1);// добавляем Ann с индексом 1
+        list.add(new Person("Lena", 44),3);// добавляем Ann с индексом 5
+
 
         System.out.println("Cписок:");
         System.out.println(list);
@@ -25,6 +28,9 @@ public class Main2 {
         list.add(new Person("В конец", 99), 100);
         System.out.println("---------------------------------");
         System.out.println(list);
+        System.out.println("---------------------------------");
+        System.out.println("Человек по индексу 1: " + list.get(1)); // вызвали конкретный элемент по индексу
+        System.out.println("Размер списка: " + list.size());
 
 
     }
