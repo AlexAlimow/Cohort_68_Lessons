@@ -4,15 +4,18 @@ import app.model.*;
 
 public class Main {
     public static void main(String[] args) {
+
         Manager<Programmer> programmerManager = new Manager<>("Alex");
         programmerManager.addTeamMember(new BackEndProgrammer("Jack"));
         programmerManager.addTeamMember(new FrontEndProgrammer("John"));
+        System.out.println(programmerManager);
 
         Manager<QAEngineer> qaManager = new Manager<>("Bob");
         qaManager.addTeamMember(new QAEngineer("Nick"));
 
         programmerManager.showTeam();
         qaManager.showTeam();
+        System.out.println(qaManager);
     }
 }
 /*

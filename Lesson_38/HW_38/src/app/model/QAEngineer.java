@@ -14,4 +14,8 @@ public class QAEngineer implements Employee {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "QA Engineer: " + name;
+    }
 }

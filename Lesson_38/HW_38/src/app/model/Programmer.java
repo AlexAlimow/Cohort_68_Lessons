@@ -14,4 +14,8 @@ public class Programmer implements Employee {
         return name;
     }
 
+    @Override
+    public String toString() {
+        return "Programmer: " + name;
+    }
 }

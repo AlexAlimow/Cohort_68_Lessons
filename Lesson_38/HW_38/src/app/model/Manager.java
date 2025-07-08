@@ -24,4 +24,8 @@ public class Manager <T extends Employee> {
             System.out.println("- " + member.getName());
         }
     }
+    @Override
+    public String toString(){
+        return "Manager: " + name + ", team size: " + team.size();
+    }
 }
