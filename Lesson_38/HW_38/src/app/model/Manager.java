@@ -5,7 +5,7 @@ import app.Employee;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Manager <T extends Employee> {
+public class Manager<T extends Employee> {
     private String name;
     private List<T> team;
 
@@ -14,18 +14,20 @@ public class Manager <T extends Employee> {
         this.team = new ArrayList<>();
     }
 
-    public void addTeamMember(T member){
+    public void addTeamMember(T member) {
         team.add(member);
         System.out.println("Добавлен в команду: " + member.getName());
     }
-    public void showTeam(){
+
+    public void showTeam() {
         System.out.println("Команда менеджера " + name + ":");
-        for (T member : team){
+        for (T member : team) {
             System.out.println("- " + member.getName());
         }
     }
+
     @Override
-    public String toString(){
+    public String toString() {
         return "Manager: " + name + ", team size: " + team.size();
     }
 }
