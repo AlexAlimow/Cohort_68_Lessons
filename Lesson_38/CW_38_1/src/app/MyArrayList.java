@@ -3,10 +3,27 @@ package app;
 import app.model.Product;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
-public class  MyArrayList implements MyList {
+public class  MyArrayList<E> implements MyList {
     private int size = 0;
     private Product[] array = new Product[5];
+
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+           private int currentIndex = 0;
+            @Override
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            @Override
+            public E next() {
+                return (E)array[currentIndex++];
+            }
+        };
+
+    }
 
 
     @Override

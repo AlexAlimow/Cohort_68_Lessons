@@ -53,6 +53,9 @@ public class Main {
         list2.add(new Product("Macboock",2009,10,200),2);
 
 
+        System.out.println("---------------------------------------------------------");
+
+
 
 
     }
