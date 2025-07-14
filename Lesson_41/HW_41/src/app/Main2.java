@@ -61,6 +61,7 @@ public class Main2 {
             System.out.println(employee);
         }
     }
+
     public static Set<Person> getCommonPersons(List<Person> list1, List<Person> list2) {
         Set<Person> set1 = new HashSet<>(list1);
         set1.retainAll(list2);
