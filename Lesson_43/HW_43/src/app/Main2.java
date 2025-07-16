@@ -9,7 +9,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Main2 extends LectureTracker {
+import static app.model.LectureTracker.countAttendance;
+
+public class Main2  {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
         students.add(new Student("Jack"));
@@ -27,6 +29,7 @@ public class Main2 extends LectureTracker {
         students.add(new Student("Ann"));
         students.add(new Student("Ann"));
         students.add(new Student("Ann"));
+
 
         Map<Student, Integer> res = countAttendance(students);
         printAttendance(res);

@@ -7,6 +7,32 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="demo20250630_1" />
+    <orderEntry type="module" module-name="CW_42_4" />
+    <orderEntry type="module" module-name="CW_38_1" />
+    <orderEntry type="module" module-name="CW_36_1" />
+    <orderEntry type="module" module-name="HW_38" />
+    <orderEntry type="module" module-name="Lesson_41" />
+    <orderEntry type="module" module-name="CW_39_1" />
+    <orderEntry type="module" module-name="HW_33" />
+    <orderEntry type="module" module-name="HW_32" />
+    <orderEntry type="module" module-name="CW_33_1" />
+    <orderEntry type="module" module-name="HW_43" />
+    <orderEntry type="module" module-name="Demo_final" />
+    <orderEntry type="module" module-name="CW_36_3" />
+    <orderEntry type="module" module-name="HW_35" />
+    <orderEntry type="module" module-name="CW_32" />
+    <orderEntry type="module" module-name="CW_36_2" />
+    <orderEntry type="module" module-name="Lesson_44" />
+    <orderEntry type="module" module-name="CW_40_2" />
+    <orderEntry type="module" module-name="HW_34_2" />
     <orderEntry type="module" module-name="HW_36" />
+    <orderEntry type="module" module-name="CW_35_1" />
+    <orderEntry type="module" module-name="CW_34_2" />
+    <orderEntry type="module" module-name="CW_42_3" />
+    <orderEntry type="module" module-name="CW_34_1" />
+    <orderEntry type="module" module-name="HW_34" />
+    <orderEntry type="module" module-name="HW_37" />
+    <orderEntry type="module" module-name="HW_40" />
   </component>
 </module>

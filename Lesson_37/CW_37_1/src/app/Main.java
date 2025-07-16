@@ -77,18 +77,18 @@ public class Main {
 
     private static List<Product> getSampleProducts() {
         List<Product> list = new ArrayList<>();
-        list.add(new Product("Телефон", 299.99, 4.5, 152));
-        list.add(new Product("Телефон", 499.99, 4.5, 112));
-        list.add(new Product("Телефон", 599.99, 4.5, 122));
-        list.add(new Product("Ноутбук", 899.99, 4.8, 15));
-        list.add(new Product("Ноутбук", 1199.99, 4.8, 52));
-        list.add(new Product("Ноутбук", 1299.99, 4.8, 235));
-        list.add(new Product("Наушники", 59.99, 4.2, 31));
-        list.add(new Product("Наушники", 55.99, 4.4, 32));
-        list.add(new Product("Наушники", 58.99, 4.3, 35));
-        list.add(new Product("Монитор", 299.99, 4.7, 50));
-        list.add(new Product("Монитор", 179.99, 4.5, 40));
-        list.add(new Product("Монитор", 189.99, 4.3, 25));
+        list.add(new Product("Телефон", 299.99, (int) 4.5, 152));
+        list.add(new Product("Телефон", 499.99, (int) 4.5, 112));
+        list.add(new Product("Телефон", 599.99, (int) 4.5, 122));
+        list.add(new Product("Ноутбук", 899.99, (int) 4.8, 15));
+        list.add(new Product("Ноутбук", 1199.99, (int) 4.8, 52));
+        list.add(new Product("Ноутбук", 1299.99, (int) 4.8, 235));
+        list.add(new Product("Наушники", 59.99, (int) 4.2, 31));
+        list.add(new Product("Наушники", 55.99, (int) 4.4, 32));
+        list.add(new Product("Наушники", 58.99, (int) 4.3, 35));
+        list.add(new Product("Монитор", 299.99, (int) 4.7, 50));
+        list.add(new Product("Монитор", 179.99, (int) 4.5, 40));
+        list.add(new Product("Монитор", 189.99, (int) 4.3, 25));
         return list;
     }
 }

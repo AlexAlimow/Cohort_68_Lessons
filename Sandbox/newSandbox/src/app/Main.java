@@ -16,5 +16,10 @@ public class Main {
         }
         int[][] arr2 = new int[5][5];
 
+        String textExample = "John";
+        String textExample1 = "John";
+        String textExample2 = "Tim";
+        System.out.println(textExample.equalsIgnoreCase(textExample1));
+
     }
 }
