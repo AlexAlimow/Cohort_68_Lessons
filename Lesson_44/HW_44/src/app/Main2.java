@@ -10,6 +10,8 @@ import java.util.List;
 
 public class Main2 {
     public static void main(String[] args) {
+
+
         List<Person> personList = Arrays.asList(
                 new Person("Jack", "Smith", "j.smith@gmail.com", "1234567",
                         new Address("54294", "Trier", "Trierer", "5")),
@@ -19,44 +21,66 @@ public class Main2 {
                         new Address("10115", "Berlin", "Hauptstr", "7"))
         );
 
-        printFullNames(personList);
-        printEmails(personList);
-        printPhones(personList);
-        printAddresses(personList);
+//        printFullNames(personList);
+//        printEmails(personList);
+//        printPhones(personList);
+//        printAddresses(personList);
+
+        printPersons(personList, "Список всех ФИО:",
+                p -> p.getfName() + " " + p.getlName());
+
+        printPersons(personList, "Список всех email адресов:",
+                Person::getEmail);
+
+        printPersons(personList, "Список всех телефонов:",
+                Person::getPhone);
+
+        printPersons(personList, "Список всех адресов:",
+                p -> p.getAddress().toString());
+
+        printPersons(personList, "Список всех городов:",
+                p -> p.getAddress().getCity());
+
+
     }
 
-    private static void printFullNames(List<Person> personList) {
-        System.out.println("Список всех имен и фамилий:");
-        mapPersons(personList, person ->
-                person.getfName() + " " + person.getlName()
-        ).forEach(System.out::println);
+    public static void printPersons(List<Person> personList, String title, PersonFormatter formatter) {
+        System.out.println("\n" + title);
+        personList.stream().map(formatter::format).forEach(System.out::println);
     }
 
-    private static void printEmails(List<Person> personList) {
-        System.out.println("\nСписок всех email адресов:");
-        mapPersons(personList, Person::getEmail)
-                .forEach(System.out::println);
-    }
-
-    private static void printPhones(List<Person> personList) {
-        System.out.println("\nСписок всех телефонов:");
-        mapPersons(personList, Person::getPhone)
-                .forEach(System.out::println);
-    }
-
-    private static void printAddresses(List<Person> personList) {
-        System.out.println("\nСписок всех адресов:");
-        mapPersons(personList, person -> person.getAddress().toString())
-                .forEach(System.out::println);
-    }
-
-    public static List<String> mapPersons(List<Person> personList, PersonFormatter formatter) {
-        List<String> result = new ArrayList<>();
-        for (Person person : personList) {
-            result.add(formatter.format(person));
-        }
-        return result;
-    }
+//    private static void printFullNames(List<Person> personList) {
+//        System.out.println("Список всех имен и фамилий:");
+//        mapPersons(personList, person ->
+//                person.getfName() + " " + person.getlName()
+//        ).forEach(System.out::println);
+//    }
+//
+//    private static void printEmails(List<Person> personList) {
+//        System.out.println("\nСписок всех email адресов:");
+//        mapPersons(personList, Person::getEmail)
+//                .forEach(System.out::println);
+//    }
+//
+//    private static void printPhones(List<Person> personList) {
+//        System.out.println("\nСписок всех телефонов:");
+//        mapPersons(personList, Person::getPhone)
+//                .forEach(System.out::println);
+//    }
+//
+//    private static void printAddresses(List<Person> personList) {
+//        System.out.println("\nСписок всех адресов:");
+//        mapPersons(personList, person -> person.getAddress().toString())
+//                .forEach(System.out::println);
+//    }
+//
+//    public static List<String> mapPersons(List<Person> personList, PersonFormatter formatter) {
+//        List<String> result = new ArrayList<>();
+//        for (Person person : personList) {
+//            result.add(formatter.format(person));
+//        }
+//        return result;
+//    }
 }
 /*
 2
