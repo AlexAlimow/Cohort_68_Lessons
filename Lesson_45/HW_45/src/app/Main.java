@@ -35,7 +35,7 @@ public class Main {
         List<BankAccount> youngOwnersAccounts = accounts.stream()
                 .filter(acc -> acc.getOwner().getAge() < 21)
                 .collect(Collectors.toList());
-        System.out.println("\nВладельцы с возрастом > 21");
+        System.out.println("\nВладельцы с возрастом < 21");
         youngOwnersAccounts.forEach(System.out::println);
 
 
