@@ -26,10 +26,10 @@ public class Main {
         lowBalance.forEach(System.out::println);
 
         List<Person> richOwners = accounts.stream()
-                .filter(acc -> acc.getBalance() > 10000)
+                .filter(acc -> acc.getBalance() > 1000_000)
                 .map(BankAccount::getOwner)
                 .collect(Collectors.toList());
-        System.out.println("\nВладельцы с счетом > 10000:");
+        System.out.println("\nВладельцы с счетом > 1000_000:");
         richOwners.forEach(System.out::println);
 
         List<BankAccount> youngOwnersAccounts = accounts.stream()
