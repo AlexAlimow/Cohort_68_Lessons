@@ -1,5 +1,7 @@
 package app.model;
 
+import java.util.Objects;
+
 public class Person {
 private String fName;
 private String lName;
@@ -26,5 +28,21 @@ private int age;
     @Override
     public String toString() {
         return fName + " " + lName + ", age: " + age;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object == null || getClass() != object.getClass()) return false;
+
+        Person person = (Person) object;
+        return age == person.age && Objects.equals(fName, person.fName) && Objects.equals(lName, person.lName);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hashCode(fName);
+        result = 31 * result + Objects.hashCode(lName);
+        result = 31 * result + age;
+        return result;
     }
 }
