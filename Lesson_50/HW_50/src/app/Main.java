@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Main {
-    private static final String FILE_NAME = "C:\\aittr\\Proj_02\\Lesson_50\\HW_50\\src\\app\\files\\user_input.txt";
+    private static final String FILE_NAME = "./Lesson_50/HW_50/src/app/files/user_input.txt";
 
     public static void main(String[] args) {
         writeToFile();

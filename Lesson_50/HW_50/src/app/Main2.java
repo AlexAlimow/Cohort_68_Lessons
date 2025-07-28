@@ -8,13 +8,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main2 {
-    private static final String FILE_NAME = "C:\\aittr\\Proj_02\\Lesson_50\\HW_50\\src\\app\\files\\persons.txt";
+    private static final String FILE_NAME = ".\\Lesson_50\\HW_50\\src\\app\\files\\persons.txt";
 
     public static void main(String[] args) {
 
         writeToFile(); // или можно просто добавить
 
         List<Person> people = readPersonsFromFile(FILE_NAME);
+
         System.out.println("Список людей из файла:");
         for (Person person : people) {
             System.out.println(person);
